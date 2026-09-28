@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tradutor de #hashtags e @menções</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            font-size: 16px;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 8px 16px;
+            font-size: 16px;
+        }
+
+        #saida {
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 40px;
+            white-space: pre-wrap;
+        }
+
+        .erro {
+            background: #fdd;
+            color: #900;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tradutor de #hashtags e @menções</h1>
+
+    <textarea id="entrada" placeholder="Digite seu texto aqui"></textarea>
+    <br>
+    <button id="botao">Traduzir</button>
+
+    <h3>Resultado</h3>
+    <div id="saida"></div>
+
+    <h3>Erros encontrados</h3>
+    <ul id="erros"></ul>
+
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
